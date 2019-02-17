@@ -2,7 +2,7 @@ FROM openshift/base-centos7
 
 MAINTAINER Sanket Kudalkar <sanket.4857@gmail.com>
 
-ENV JAVA_VERSION 1.8.181
+ENV JAVA_VERSION 1.8.0_181
 ENV GRADLE_VERSION 4.7
 
 LABEL io.k8s.display-name="Spring Boot Gradle Application Builder" \
