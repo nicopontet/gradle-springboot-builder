@@ -4,6 +4,7 @@ MAINTAINER Sanket Kudalkar <sanket.4857@gmail.com>
 
 ENV JAVA_VERSION 1.8.0
 ENV GRADLE_VERSION 4.7
+ENV PORT 7777
 
 LABEL io.k8s.display-name="Spring Boot Gradle Application Builder" \
       io.k8s.description="Platform for building and running Spring Boot applications with Gradle build tool" \
@@ -33,4 +34,4 @@ RUN chmod +x /usr/local/s2i/assemble
 RUN chmod +x /usr/local/s2i/run
 
 USER 1001
-EXPOSE 8080
+EXPOSE $PORT
