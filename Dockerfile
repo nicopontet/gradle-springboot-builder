@@ -29,6 +29,8 @@ COPY ./.s2i/bin /usr/local/s2i
 LABEL io.openshift.s2i.scripts-url=image:///usr/local/s2i
 
 RUN chown -R 1001:0 /opt/app-root
+RUN chmod +x /usr/local/s2i/assemble
+RUN chmod +x /usr/local/s2i/run
 
 USER 1001
 EXPOSE 8080
