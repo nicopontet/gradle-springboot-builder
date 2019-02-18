@@ -2,7 +2,7 @@ cp -R /tmp/src /opt/app-root/
 cd /opt/app-root/src
 
 echo "---->>>> Building application with Gradle"
-gradle build
+gradle clean build
 
 ARTIFACT_DIR=${ARTIFACT_DIR:-build/libs}
 APP_JAR=${APP_JAR:-app.jar}
